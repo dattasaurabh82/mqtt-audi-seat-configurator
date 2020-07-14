@@ -1197,7 +1197,7 @@
         "topic": "",
         "qos": "",
         "retain": "",
-        "broker": "a8cbf63f.0ef318",
+        "broker": "e50a7a58.8a1008",
         "x": 2770,
         "y": 60,
         "wires": []
@@ -2868,7 +2868,7 @@
         "topic": "audi_seat/seat_motion/lateral",
         "qos": "2",
         "datatype": "auto",
-        "broker": "a8cbf63f.0ef318",
+        "broker": "e50a7a58.8a1008",
         "x": 1100,
         "y": 1460,
         "wires": [
@@ -2885,7 +2885,7 @@
         "topic": "audi_seat/seat_motion/vertical",
         "qos": "2",
         "datatype": "auto",
-        "broker": "a8cbf63f.0ef318",
+        "broker": "e50a7a58.8a1008",
         "x": 1090,
         "y": 1560,
         "wires": [
@@ -3540,7 +3540,7 @@
         "topic": "audi_seat/back_rest_motion",
         "qos": "2",
         "datatype": "auto",
-        "broker": "a8cbf63f.0ef318",
+        "broker": "e50a7a58.8a1008",
         "x": 1100,
         "y": 1660,
         "wires": [
@@ -4206,7 +4206,7 @@
         "topic": "audi_seat/massage",
         "qos": "2",
         "datatype": "auto",
-        "broker": "a8cbf63f.0ef318",
+        "broker": "e50a7a58.8a1008",
         "x": 1130,
         "y": 1760,
         "wires": [

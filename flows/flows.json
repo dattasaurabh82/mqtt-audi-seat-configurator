@@ -1250,7 +1250,9 @@
             "7ef6a28b.2ea18c",
             "10296697.64f6b9",
             "7b9c9c0a.a85d14",
-            "48c3fd05.c09a34"
+            "48c3fd05.c09a34",
+            "b93c8d25.1d6a7",
+            "f56059d9.776538"
         ],
         "x": 2645,
         "y": 60,
@@ -2155,7 +2157,8 @@
                 "cf34e8b.64b5c18",
                 "c0c380c6.95ede",
                 "487d89c6.0edb08",
-                "d63e2e5a.f070f"
+                "d63e2e5a.f070f",
+                "7de98b6a.dddf64"
             ]
         ]
     },
@@ -2186,7 +2189,8 @@
                 "87d743f9.2aabb",
                 "5a127e2e.d10e9",
                 "bd9ff7eb.64b608",
-                "71b0bdd4.20c644"
+                "71b0bdd4.20c644",
+                "89d12625.c08e58"
             ]
         ]
     },
@@ -2223,7 +2227,7 @@
         "func": "msg.payload = {\n    \"payload\": \"on\",\n    \"timeout\": parseInt(global.get(\"seat_up_dur\")),\n    \"warning\": 2\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 1070,
+        "x": 1060,
         "y": 460,
         "wires": [
             [
@@ -2264,7 +2268,7 @@
         "func": "msg.payload = {\n    \"payload\": \"on\",\n    \"timeout\": parseInt(global.get(\"seat_front_dur\")),\n    \"warning\": 2\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 1070,
+        "x": 1060,
         "y": 520,
         "wires": [
             [
@@ -2481,7 +2485,7 @@
         "to": "",
         "reg": false,
         "x": 1080,
-        "y": 260,
+        "y": 220,
         "wires": [
             [
                 "af1bc724.d4b548"
@@ -2497,7 +2501,7 @@
             "e11a7ac2.ec7698"
         ],
         "x": 1295,
-        "y": 260,
+        "y": 220,
         "wires": []
     },
     {
@@ -2527,7 +2531,7 @@
         "to": "",
         "reg": false,
         "x": 1080,
-        "y": 320,
+        "y": 280,
         "wires": [
             [
                 "bb4dbfa9.70516"
@@ -2543,7 +2547,7 @@
             "e11a7ac2.ec7698"
         ],
         "x": 1295,
-        "y": 320,
+        "y": 280,
         "wires": []
     },
     {
@@ -2573,7 +2577,7 @@
         "to": "",
         "reg": false,
         "x": 1080,
-        "y": 740,
+        "y": 680,
         "wires": [
             [
                 "cad08bec.ca0318"
@@ -2589,7 +2593,7 @@
             "e11a7ac2.ec7698"
         ],
         "x": 1295,
-        "y": 740,
+        "y": 680,
         "wires": []
     },
     {
@@ -2619,7 +2623,7 @@
         "to": "",
         "reg": false,
         "x": 1090,
-        "y": 800,
+        "y": 740,
         "wires": [
             [
                 "a947a673.60efd8"
@@ -2635,7 +2639,7 @@
             "e11a7ac2.ec7698"
         ],
         "x": 1295,
-        "y": 800,
+        "y": 740,
         "wires": []
     },
     {
@@ -3401,7 +3405,7 @@
         "to": "",
         "reg": false,
         "x": 1080,
-        "y": 860,
+        "y": 800,
         "wires": [
             [
                 "e4b5923e.e14dd"
@@ -3417,7 +3421,7 @@
             "e11a7ac2.ec7698"
         ],
         "x": 1295,
-        "y": 860,
+        "y": 800,
         "wires": []
     },
     {
@@ -3576,7 +3580,7 @@
         "to": "",
         "reg": false,
         "x": 1080,
-        "y": 380,
+        "y": 340,
         "wires": [
             [
                 "8655b98.0c27d48"
@@ -3592,7 +3596,7 @@
             "e11a7ac2.ec7698"
         ],
         "x": 1295,
-        "y": 380,
+        "y": 340,
         "wires": []
     },
     {
@@ -3603,7 +3607,7 @@
         "func": "msg.payload = {\n    \"payload\": \"on\",\n    \"timeout\": parseInt(global.get(\"back_rest_back_dur\")),\n    \"warning\": 2\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 1090,
+        "x": 1070,
         "y": 580,
         "wires": [
             [
@@ -4431,5 +4435,97 @@
                 "acb7b9fd.8ed608"
             ]
         ]
+    },
+    {
+        "id": "b93c8d25.1d6a7",
+        "type": "link out",
+        "z": "11115443.8ca05c",
+        "name": "mqtt out",
+        "links": [
+            "e11a7ac2.ec7698"
+        ],
+        "x": 1295,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "7de98b6a.dddf64",
+        "type": "change",
+        "z": "11115443.8ca05c",
+        "name": "audi_seat/massage: start",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "start",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "audi_seat/massage",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1050,
+        "y": 400,
+        "wires": [
+            [
+                "b93c8d25.1d6a7"
+            ]
+        ]
+    },
+    {
+        "id": "89d12625.c08e58",
+        "type": "change",
+        "z": "11115443.8ca05c",
+        "name": "audi_seat/massage: stop",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "stop",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "audi_seat/massage",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1050,
+        "y": 860,
+        "wires": [
+            [
+                "f56059d9.776538"
+            ]
+        ]
+    },
+    {
+        "id": "f56059d9.776538",
+        "type": "link out",
+        "z": "11115443.8ca05c",
+        "name": "mqtt out",
+        "links": [
+            "e11a7ac2.ec7698"
+        ],
+        "x": 1295,
+        "y": 860,
+        "wires": []
     }
 ]
