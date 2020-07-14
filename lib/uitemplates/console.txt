@@ -1,0 +1,12 @@
+// name: console
+<div id="{{'my_'+$id}}" style="{{'color:'+theme.base_color}}">Some text</div>
+<script>
+(function(scope) {
+  scope.$watch('msg', function(msg) {
+    if (msg) {
+      // Do something when msg arrives
+      $("#my_"+scope.$id).html(msg.payload);
+    }
+  });
+})(scope);
+</script>

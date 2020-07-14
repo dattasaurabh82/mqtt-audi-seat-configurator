@@ -1,0 +1,4435 @@
+[
+    {
+        "id": "81005e6f.f948c",
+        "type": "tab",
+        "label": "configuration",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "11115443.8ca05c",
+        "type": "tab",
+        "label": "test",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "714a0eba.ea77c",
+        "type": "tab",
+        "label": "notes",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "e50a7a58.8a1008",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "e6e3b07a.69453",
+        "type": "ui_tab",
+        "z": "",
+        "name": "SEAT CONFIGURATOR",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "6f3366d.9c49e98",
+        "type": "ui_group",
+        "z": "",
+        "name": "CONFIGURE SEAT COMPONENT MOTION TIMINGS",
+        "tab": "e6e3b07a.69453",
+        "order": 2,
+        "disp": true,
+        "width": "10",
+        "collapse": false
+    },
+    {
+        "id": "1473f412.e5b82c",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "My dark",
+                "default": "#4B7930",
+                "baseColor": "#5e8d87",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#5e8d87",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#2e333a",
+                    "edited": true
+                },
+                "page-backgroundColor": {
+                    "value": "#383c45",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#434954",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#88b0ab",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#3f454f",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#3f454f",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#cccccc",
+                    "edited": true
+                },
+                "widget-backgroundColor": {
+                    "value": "#5e8d87",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#2e333a",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "81b83ab2.b76038",
+        "type": "json-db-collection",
+        "z": "",
+        "name": "durations",
+        "collection": "durations",
+        "save": true
+    },
+    {
+        "id": "f7982156.ac986",
+        "type": "json-db-collection",
+        "z": "81005e6f.f948c",
+        "name": "Test",
+        "collection": "test",
+        "save": true
+    },
+    {
+        "id": "ea427733.d65108",
+        "type": "json-db-collection",
+        "z": "81005e6f.f948c",
+        "name": "Test",
+        "collection": "test",
+        "save": true
+    },
+    {
+        "id": "953f6871.46a5d8",
+        "type": "ui_group",
+        "z": "",
+        "name": "TEST",
+        "tab": "e6e3b07a.69453",
+        "order": 3,
+        "disp": true,
+        "width": "5",
+        "collapse": false
+    },
+    {
+        "id": "aba832d6.e1e26",
+        "type": "ui_group",
+        "z": "",
+        "name": "note",
+        "tab": "e6e3b07a.69453",
+        "order": 1,
+        "disp": false,
+        "width": "10",
+        "collapse": false
+    },
+    {
+        "id": "a8cbf63f.0ef318",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "",
+        "broker": "127.0.0.1",
+        "port": "8087",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "20684a59.824aa6",
+        "type": "ui_group",
+        "z": "",
+        "name": "STATUS",
+        "tab": "e6e3b07a.69453",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "ae088c56.e2252",
+        "type": "inject",
+        "z": "81005e6f.f948c",
+        "name": "",
+        "topic": "",
+        "payload": "stop",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 1110,
+        "y": 640,
+        "wires": [
+            [
+                "e1b92d48.10242"
+            ]
+        ]
+    },
+    {
+        "id": "18feaf07.411d81",
+        "type": "counter",
+        "z": "81005e6f.f948c",
+        "inc": 1,
+        "name": "",
+        "x": 2240,
+        "y": 460,
+        "wires": [
+            [
+                "a9cf94b7.f81058",
+                "c0f477c3.61ebe8"
+            ]
+        ]
+    },
+    {
+        "id": "a9cf94b7.f81058",
+        "type": "function",
+        "z": "81005e6f.f948c",
+        "name": "set time spent for seat moving forward",
+        "func": "global.set(\"seat_front_dur\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 2530,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e1b92d48.10242",
+        "type": "ui_button",
+        "z": "81005e6f.f948c",
+        "name": "stop seat forward motion",
+        "group": "6f3366d.9c49e98",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "label": "stop/set duration",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "stop",
+        "payloadType": "str",
+        "topic": "",
+        "x": 1330,
+        "y": 640,
+        "wires": [
+            [
+                "4fb54444.7f6fec",
+                "e044a183.23642",
+                "e993d9e.a5d0a28",
+                "8fe37052.63c5e"
+            ]
+        ]
+    },
+    {
+        "id": "c0f477c3.61ebe8",
+        "type": "ui_text",
+        "z": "81005e6f.f948c",
+        "group": "6f3366d.9c49e98",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "name": "seat front movement time elapsed",
+        "label": "{{msg.payload}}",
+        "format": "sec",
+        "layout": "row-spread",
+        "x": 2510,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "1538f165.619ebf",
+        "type": "ui_button",
+        "z": "81005e6f.f948c",
+        "name": "",
+        "group": "6f3366d.9c49e98",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "label": "seat base →",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 1370,
+        "y": 540,
+        "wires": [
+            [
+                "49997d90.d35914"
+            ]
+        ]
+    },
+    {
+        "id": "49997d90.d35914",
+        "type": "change",
+        "z": "81005e6f.f948c",
+        "name": "audi_seat/seat_motion/lateral: front",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "front",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "audi_seat/seat_motion/lateral",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1680,
+        "y": 540,
+        "wires": [
+            [
+                "4fb54444.7f6fec",
+                "d6e9f87a.c6e238"
+            ]
+        ]
+    },
+    {
+        "id": "e654b076.ddd7c",
+        "type": "inject",
+        "z": "81005e6f.f948c",
+        "name": "seat forward",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 1130,
+        "y": 540,
+        "wires": [
+            [
+                "1538f165.619ebf"
+            ]
+        ]
+    },
+    {
+        "id": "51df1cb7.b11a24",
+        "type": "looptimer",
+        "z": "81005e6f.f948c",
+        "duration": "1",
+        "units": "Second",
+        "maxloops": "1000000000",
+        "maxtimeout": "1",
+        "maxtimeoutunits": "Hour",
+        "name": "",
+        "x": 2000,
+        "y": 1320,
+        "wires": [
+            [
+                "1bf4c932.471ec7"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "6a55b0c7.a1ecd",
+        "type": "inject",
+        "z": "81005e6f.f948c",
+        "name": "",
+        "topic": "",
+        "payload": "stop",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 1090,
+        "y": 1320,
+        "wires": [
+            [
+                "ffa3a700.1ccdf8"
+            ]
+        ]
+    },
+    {
+        "id": "1bf4c932.471ec7",
+        "type": "counter",
+        "z": "81005e6f.f948c",
+        "inc": 1,
+        "name": "",
+        "x": 2240,
+        "y": 1120,
+        "wires": [
+            [
+                "6459692e.167828",
+                "eaed5ce2.44d0b"
+            ]
+        ]
+    },
+    {
+        "id": "6459692e.167828",
+        "type": "function",
+        "z": "81005e6f.f948c",
+        "name": "set time spent for seat moving backward",
+        "func": "global.set(\"seat_back_dur\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 2520,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ffa3a700.1ccdf8",
+        "type": "ui_button",
+        "z": "81005e6f.f948c",
+        "name": "stop seat backward motion",
+        "group": "6f3366d.9c49e98",
+        "order": 7,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "label": "stop/set duration",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "stop",
+        "payloadType": "str",
+        "topic": "",
+        "x": 1300,
+        "y": 1320,
+        "wires": [
+            [
+                "51df1cb7.b11a24",
+                "506eb9b1.987038",
+                "faa33045.431ec",
+                "df3dd45d.3e7628"
+            ]
+        ]
+    },
+    {
+        "id": "eaed5ce2.44d0b",
+        "type": "ui_text",
+        "z": "81005e6f.f948c",
+        "group": "6f3366d.9c49e98",
+        "order": 6,
+        "width": "2",
+        "height": "1",
+        "name": "seat back movement time elapsed",
+        "label": "{{msg.payload}}",
+        "format": "sec",
+        "layout": "row-spread",
+        "x": 2490,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "758ee2c2.0a988c",
+        "type": "ui_button",
+        "z": "81005e6f.f948c",
+        "name": "",
+        "group": "6f3366d.9c49e98",
+        "order": 5,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "label": "seat base ←",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 1330,
+        "y": 1220,
+        "wires": [
+            [
+                "cbb542a9.e1b1"
+            ]
+        ]
+    },
+    {
+        "id": "cbb542a9.e1b1",
+        "type": "change",
+        "z": "81005e6f.f948c",
+        "name": "audi_seat/seat_motion/lateral: back",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "back",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "audi_seat/seat_motion/lateral",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1700,
+        "y": 1220,
+        "wires": [
+            [
+                "51df1cb7.b11a24",
+                "b410b3c6.f6a33"
+            ]
+        ]
+    },
+    {
+        "id": "9cbc6645.727598",
+        "type": "inject",
+        "z": "81005e6f.f948c",
+        "name": "seat backward",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 1120,
+        "y": 1220,
+        "wires": [
+            [
+                "758ee2c2.0a988c"
+            ]
+        ]
+    },
+    {
+        "id": "40a8d929.2ce1d8",
+        "type": "looptimer",
+        "z": "81005e6f.f948c",
+        "duration": "1",
+        "units": "Second",
+        "maxloops": "1000000000",
+        "maxtimeout": "1",
+        "maxtimeoutunits": "Hour",
+        "name": "",
+        "x": 2000,
+        "y": 1940,
+        "wires": [
+            [
+                "9db98c44.b8e92"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "8aeb6722.e43ec8",
+        "type": "inject",
+        "z": "81005e6f.f948c",
+        "name": "",
+        "topic": "",
+        "payload": "stop",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 1090,
+        "y": 1940,
+        "wires": [
+            [
+                "53bf2048.45d1f"
+            ]
+        ]
+    },
+    {
+        "id": "9db98c44.b8e92",
+        "type": "counter",
+        "z": "81005e6f.f948c",
+        "inc": 1,
+        "name": "",
+        "x": 2240,
+        "y": 1720,
+        "wires": [
+            [
+                "edca5c8a.26f88",
+                "cb9596eb.f5d478"
+            ]
+        ]
+    },
+    {
+        "id": "edca5c8a.26f88",
+        "type": "function",
+        "z": "81005e6f.f948c",
+        "name": "set time spent for seat moving upward",
+        "func": "global.set(\"seat_up_dur\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 2510,
+        "y": 1760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "53bf2048.45d1f",
+        "type": "ui_button",
+        "z": "81005e6f.f948c",
+        "name": "stop seat upward motion",
+        "group": "6f3366d.9c49e98",
+        "order": 11,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "label": "stop/set duration",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "stop",
+        "payloadType": "str",
+        "topic": "",
+        "x": 1310,
+        "y": 1940,
+        "wires": [
+            [
+                "40a8d929.2ce1d8",
+                "ac05324c.94326",
+                "a5bb929d.a0295",
+                "d44e4e66.13bb"
+            ]
+        ]
+    },
+    {
+        "id": "cb9596eb.f5d478",
+        "type": "ui_text",
+        "z": "81005e6f.f948c",
+        "group": "6f3366d.9c49e98",
+        "order": 10,
+        "width": "2",
+        "height": "1",
+        "name": "seat upward movement time elapsed",
+        "label": "{{msg.payload}}",
+        "format": "sec",
+        "layout": "row-spread",
+        "x": 2500,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "ada5726.d680f9",
+        "type": "ui_button",
+        "z": "81005e6f.f948c",
+        "name": "",
+        "group": "6f3366d.9c49e98",
+        "order": 9,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "label": "seat base ↑",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 1350,
+        "y": 1840,
+        "wires": [
+            [
+                "3d7969f9.3017b6"
+            ]
+        ]
+    },
+    {
+        "id": "3d7969f9.3017b6",
+        "type": "change",
+        "z": "81005e6f.f948c",
+        "name": "audi_seat/seat_motion/vertical: up",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "up",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "audi_seat/seat_motion/vertical",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1700,
+        "y": 1840,
+        "wires": [
+            [
+                "40a8d929.2ce1d8",
+                "9e1f2d09.e012b"
+            ]
+        ]
+    },
+    {
+        "id": "df02edd1.648eb",
+        "type": "inject",
+        "z": "81005e6f.f948c",
+        "name": "seat upward",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 1110,
+        "y": 1840,
+        "wires": [
+            [
+                "ada5726.d680f9"
+            ]
+        ]
+    },
+    {
+        "id": "4fb54444.7f6fec",
+        "type": "looptimer",
+        "z": "81005e6f.f948c",
+        "duration": "1",
+        "units": "Second",
+        "maxloops": "1000000000",
+        "maxtimeout": "1",
+        "maxtimeoutunits": "Hour",
+        "name": "",
+        "x": 1980,
+        "y": 640,
+        "wires": [
+            [
+                "18feaf07.411d81"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "e044a183.23642",
+        "type": "change",
+        "z": "81005e6f.f948c",
+        "name": "reset",
+        "rules": [
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1950,
+        "y": 460,
+        "wires": [
+            [
+                "18feaf07.411d81"
+            ]
+        ]
+    },
+    {
+        "id": "506eb9b1.987038",
+        "type": "change",
+        "z": "81005e6f.f948c",
+        "name": "reset",
+        "rules": [
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1970,
+        "y": 1120,
+        "wires": [
+            [
+                "1bf4c932.471ec7"
+            ]
+        ]
+    },
+    {
+        "id": "ac05324c.94326",
+        "type": "change",
+        "z": "81005e6f.f948c",
+        "name": "reset",
+        "rules": [
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1970,
+        "y": 1720,
+        "wires": [
+            [
+                "9db98c44.b8e92"
+            ]
+        ]
+    },
+    {
+        "id": "af3d2122.b5a08",
+        "type": "looptimer",
+        "z": "81005e6f.f948c",
+        "duration": "1",
+        "units": "Second",
+        "maxloops": "1000000000",
+        "maxtimeout": "1",
+        "maxtimeoutunits": "Hour",
+        "name": "",
+        "x": 2020,
+        "y": 2660,
+        "wires": [
+            [
+                "6485cf24.a7656"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "9c7fd155.99241",
+        "type": "inject",
+        "z": "81005e6f.f948c",
+        "name": "",
+        "topic": "",
+        "payload": "stop",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 1050,
+        "y": 2660,
+        "wires": [
+            [
+                "8726568a.5d4c18"
+            ]
+        ]
+    },
+    {
+        "id": "6485cf24.a7656",
+        "type": "counter",
+        "z": "81005e6f.f948c",
+        "inc": 1,
+        "name": "",
+        "x": 2260,
+        "y": 2420,
+        "wires": [
+            [
+                "a751c152.afe2",
+                "b818ebc5.07d648"
+            ]
+        ]
+    },
+    {
+        "id": "a751c152.afe2",
+        "type": "function",
+        "z": "81005e6f.f948c",
+        "name": "set time spent for seat moving downward",
+        "func": "global.set(\"seat_down_dur\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 2560,
+        "y": 2460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8726568a.5d4c18",
+        "type": "ui_button",
+        "z": "81005e6f.f948c",
+        "name": "stop seat downward motion",
+        "group": "6f3366d.9c49e98",
+        "order": 15,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "label": "stop/set duration",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "stop",
+        "payloadType": "str",
+        "topic": "",
+        "x": 1320,
+        "y": 2660,
+        "wires": [
+            [
+                "af3d2122.b5a08",
+                "cc3112df.86545",
+                "bef1f9b3.712c68",
+                "526beb4f.0b8d54"
+            ]
+        ]
+    },
+    {
+        "id": "b818ebc5.07d648",
+        "type": "ui_text",
+        "z": "81005e6f.f948c",
+        "group": "6f3366d.9c49e98",
+        "order": 14,
+        "width": "2",
+        "height": "1",
+        "name": "seat downward movement time elapsed",
+        "label": "{{msg.payload}}",
+        "format": "sec",
+        "layout": "row-spread",
+        "x": 2560,
+        "y": 2420,
+        "wires": []
+    },
+    {
+        "id": "7acdfd68.e4f514",
+        "type": "ui_button",
+        "z": "81005e6f.f948c",
+        "name": "",
+        "group": "6f3366d.9c49e98",
+        "order": 13,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "label": "seat  base ↓",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 1310,
+        "y": 2560,
+        "wires": [
+            [
+                "eda3685e.fe9b98"
+            ]
+        ]
+    },
+    {
+        "id": "eda3685e.fe9b98",
+        "type": "change",
+        "z": "81005e6f.f948c",
+        "name": "audi_seat/seat_motion/vertical: down",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "down",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "audi_seat/seat_motion/vertical",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1730,
+        "y": 2560,
+        "wires": [
+            [
+                "af3d2122.b5a08",
+                "d7996926.ecdd08"
+            ]
+        ]
+    },
+    {
+        "id": "1d07a315.b5f3ad",
+        "type": "inject",
+        "z": "81005e6f.f948c",
+        "name": "seat downward",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 1080,
+        "y": 2560,
+        "wires": [
+            [
+                "7acdfd68.e4f514"
+            ]
+        ]
+    },
+    {
+        "id": "cc3112df.86545",
+        "type": "change",
+        "z": "81005e6f.f948c",
+        "name": "reset",
+        "rules": [
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1950,
+        "y": 2420,
+        "wires": [
+            [
+                "6485cf24.a7656"
+            ]
+        ]
+    },
+    {
+        "id": "e993d9e.a5d0a28",
+        "type": "function",
+        "z": "81005e6f.f948c",
+        "name": "get time spent for seat moving forward",
+        "func": "msg.payload = global.get(\"seat_front_dur\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1690,
+        "y": 740,
+        "wires": [
+            [
+                "81e9cf2d.ac137",
+                "656930f3.aae9f"
+            ]
+        ]
+    },
+    {
+        "id": "656930f3.aae9f",
+        "type": "ui_text",
+        "z": "81005e6f.f948c",
+        "group": "6f3366d.9c49e98",
+        "order": 4,
+        "width": "2",
+        "height": "1",
+        "name": "seat front movement time duration so far",
+        "label": "{{msg.payload}}",
+        "format": "sec",
+        "layout": "row-spread",
+        "x": 2060,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "8fe37052.63c5e",
+        "type": "change",
+        "z": "81005e6f.f948c",
+        "name": "audi_seat/seat_motion/lateral: stop",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "stop",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "audi_seat/seat_motion/lateral",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1680,
+        "y": 860,
+        "wires": [
+            [
+                "26feb298.b6212e"
+            ]
+        ]
+    },
+    {
+        "id": "e41b40c5.0815",
+        "type": "mqtt out",
+        "z": "81005e6f.f948c",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "broker": "a8cbf63f.0ef318",
+        "x": 2770,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "e11a7ac2.ec7698",
+        "type": "link in",
+        "z": "81005e6f.f948c",
+        "name": "mqtt in",
+        "links": [
+            "d6e9f87a.c6e238",
+            "26feb298.b6212e",
+            "977b5287.15d92",
+            "b410b3c6.f6a33",
+            "9e1f2d09.e012b",
+            "7ebde9d4.65d088",
+            "d7996926.ecdd08",
+            "11ea7e11.583012",
+            "57fc7fc9.537f1",
+            "8755a794.23af38",
+            "1c48625e.2bf59e",
+            "b398c7aa.852a48",
+            "1ac8a9a.93e3856",
+            "f8c9ad94.005af",
+            "b63b09ee.3aee58",
+            "55406221.4ef14c",
+            "af1bc724.d4b548",
+            "bb4dbfa9.70516",
+            "cad08bec.ca0318",
+            "a947a673.60efd8",
+            "cd76fa18.6034e8",
+            "de8e79cb.0dd2e8",
+            "2d8386d8.9a2f4a",
+            "8892146.8f84be8",
+            "570f2605.cb8ba8",
+            "f9e996d8.8f2938",
+            "e4b5923e.e14dd",
+            "f00e0b16.e97c88",
+            "b0014c3.dc86cb",
+            "71011b42.605144",
+            "e1e00b94.bedef8",
+            "b8c3f192.d4716",
+            "ebbb40d0.af3fc",
+            "3ec326dc.38b90a",
+            "8655b98.0c27d48",
+            "ecf07567.54e5f8",
+            "2565997a.13b786",
+            "9c0440a4.848d8",
+            "beb6f8a5.d4e678",
+            "7ef6a28b.2ea18c",
+            "10296697.64f6b9",
+            "7b9c9c0a.a85d14",
+            "48c3fd05.c09a34"
+        ],
+        "x": 2645,
+        "y": 60,
+        "wires": [
+            [
+                "e41b40c5.0815"
+            ]
+        ]
+    },
+    {
+        "id": "d6e9f87a.c6e238",
+        "type": "link out",
+        "z": "81005e6f.f948c",
+        "name": "mqtt out",
+        "links": [
+            "e11a7ac2.ec7698"
+        ],
+        "x": 1895,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "26feb298.b6212e",
+        "type": "link out",
+        "z": "81005e6f.f948c",
+        "name": "mqtt out",
+        "links": [
+            "e11a7ac2.ec7698"
+        ],
+        "x": 1895,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "d24bb0b5.498a5",
+        "type": "change",
+        "z": "81005e6f.f948c",
+        "name": "/db/backward_time",
+        "rules": [
+            {
+                "t": "set",
+                "p": "datapath",
+                "pt": "msg",
+                "to": "/db/backward_time",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 120,
+        "wires": [
+            [
+                "b9fcc8ed.60f718"
+            ]
+        ]
+    },
+    {
+        "id": "b9fcc8ed.60f718",
+        "type": "DataOut",
+        "z": "81005e6f.f948c",
+        "collection": "81b83ab2.b76038",
+        "name": "",
+        "path": "/",
+        "error": false,
+        "x": 1030,
+        "y": 60,
+        "wires": [
+            [
+                "89567469.7a3228"
+            ]
+        ]
+    },
+    {
+        "id": "cf2e1acd.97afc8",
+        "type": "inject",
+        "z": "81005e6f.f948c",
+        "name": "",
+        "topic": "",
+        "payload": "get",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 150,
+        "y": 60,
+        "wires": [
+            [
+                "d24bb0b5.498a5",
+                "e2cf6e0a.127",
+                "892d6dbb.9aea4",
+                "6a5c64d.285009c",
+                "5d0ef24c.40ea9c",
+                "bb70f2a0.65608"
+            ]
+        ]
+    },
+    {
+        "id": "81e9cf2d.ac137",
+        "type": "change",
+        "z": "81005e6f.f948c",
+        "name": "/db/forward_time",
+        "rules": [
+            {
+                "t": "set",
+                "p": "datapath",
+                "pt": "msg",
+                "to": "/db/forward_time",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1990,
+        "y": 740,
+        "wires": [
+            [
+                "b0717dcf.33def"
+            ]
+        ]
+    },
+    {
+        "id": "b0717dcf.33def",
+        "type": "DataIn",
+        "z": "81005e6f.f948c",
+        "collection": "81b83ab2.b76038",
+        "name": "",
+        "update": false,
+        "path": "/",
+        "x": 2210,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "c7102a8b.a40798",
+        "type": "ui_ui_control",
+        "z": "81005e6f.f948c",
+        "name": "",
+        "events": "all",
+        "x": 140,
+        "y": 100,
+        "wires": [
+            [
+                "d24bb0b5.498a5",
+                "e2cf6e0a.127",
+                "892d6dbb.9aea4",
+                "6a5c64d.285009c",
+                "5d0ef24c.40ea9c",
+                "bb70f2a0.65608"
+            ]
+        ]
+    },
+    {
+        "id": "faa33045.431ec",
+        "type": "function",
+        "z": "81005e6f.f948c",
+        "name": "get time spent for seat moving backward",
+        "func": "msg.payload = global.get(\"seat_back_dur\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1700,
+        "y": 1420,
+        "wires": [
+            [
+                "b5a8cffc.27317",
+                "b1046c7.88b7e9"
+            ]
+        ]
+    },
+    {
+        "id": "b1046c7.88b7e9",
+        "type": "ui_text",
+        "z": "81005e6f.f948c",
+        "group": "6f3366d.9c49e98",
+        "order": 8,
+        "width": "2",
+        "height": "1",
+        "name": "seat back movement time duration so far",
+        "label": "{{msg.payload}}",
+        "format": "sec",
+        "layout": "row-spread",
+        "x": 2080,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "df3dd45d.3e7628",
+        "type": "change",
+        "z": "81005e6f.f948c",
+        "name": "audi_seat/seat_motion/lateral: stop",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "stop",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "audi_seat/seat_motion/lateral",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1680,
+        "y": 1540,
+        "wires": [
+            [
+                "977b5287.15d92"
+            ]
+        ]
+    },
+    {
+        "id": "977b5287.15d92",
+        "type": "link out",
+        "z": "81005e6f.f948c",
+        "name": "mqtt out",
+        "links": [
+            "e11a7ac2.ec7698"
+        ],
+        "x": 1895,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "b5a8cffc.27317",
+        "type": "change",
+        "z": "81005e6f.f948c",
+        "name": "/db/backward_time",
+        "rules": [
+            {
+                "t": "set",
+                "p": "datapath",
+                "pt": "msg",
+                "to": "/db/backward_time",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2010,
+        "y": 1420,
+        "wires": [
+            [
+                "774d5cab.c653c4"
+            ]
+        ]
+    },
+    {
+        "id": "774d5cab.c653c4",
+        "type": "DataIn",
+        "z": "81005e6f.f948c",
+        "collection": "81b83ab2.b76038",
+        "name": "",
+        "update": false,
+        "path": "/",
+        "x": 2230,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "b410b3c6.f6a33",
+        "type": "link out",
+        "z": "81005e6f.f948c",
+        "name": "mqtt out",
+        "links": [
+            "e11a7ac2.ec7698"
+        ],
+        "x": 1895,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "9e1f2d09.e012b",
+        "type": "link out",
+        "z": "81005e6f.f948c",
+        "name": "mqtt out",
+        "links": [
+            "e11a7ac2.ec7698"
+        ],
+        "x": 1915,
+        "y": 1840,
+        "wires": []
+    },
+    {
+        "id": "e2cf6e0a.127",
+        "type": "change",
+        "z": "81005e6f.f948c",
+        "name": "/db/forward_time",
+        "rules": [
+            {
+                "t": "set",
+                "p": "datapath",
+                "pt": "msg",
+                "to": "/db/forward_time",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 60,
+        "wires": [
+            [
+                "b9fcc8ed.60f718"
+            ]
+        ]
+    },
+    {
+        "id": "a5bb929d.a0295",
+        "type": "function",
+        "z": "81005e6f.f948c",
+        "name": "get time spent for seat moving upward",
+        "func": "msg.payload = global.get(\"seat_up_dur\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1710,
+        "y": 2040,
+        "wires": [
+            [
+                "9c72386d.672338",
+                "4301ab1e.aee024"
+            ]
+        ]
+    },
+    {
+        "id": "4301ab1e.aee024",
+        "type": "ui_text",
+        "z": "81005e6f.f948c",
+        "group": "6f3366d.9c49e98",
+        "order": 12,
+        "width": "2",
+        "height": "1",
+        "name": "seat up movement time duration so far",
+        "label": "{{msg.payload}}",
+        "format": "sec",
+        "layout": "row-spread",
+        "x": 2090,
+        "y": 2100,
+        "wires": []
+    },
+    {
+        "id": "d44e4e66.13bb",
+        "type": "change",
+        "z": "81005e6f.f948c",
+        "name": "audi_seat/seat_motion/vertical: stop",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "stop",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "audi_seat/seat_motion/vertical",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1710,
+        "y": 2160,
+        "wires": [
+            [
+                "7ebde9d4.65d088"
+            ]
+        ]
+    },
+    {
+        "id": "7ebde9d4.65d088",
+        "type": "link out",
+        "z": "81005e6f.f948c",
+        "name": "mqtt out",
+        "links": [
+            "e11a7ac2.ec7698"
+        ],
+        "x": 1915,
+        "y": 2160,
+        "wires": []
+    },
+    {
+        "id": "9c72386d.672338",
+        "type": "change",
+        "z": "81005e6f.f948c",
+        "name": "/db/upward_time",
+        "rules": [
+            {
+                "t": "set",
+                "p": "datapath",
+                "pt": "msg",
+                "to": "/db/upward_time",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2030,
+        "y": 2040,
+        "wires": [
+            [
+                "1c4755fd.f5a2aa"
+            ]
+        ]
+    },
+    {
+        "id": "1c4755fd.f5a2aa",
+        "type": "DataIn",
+        "z": "81005e6f.f948c",
+        "collection": "81b83ab2.b76038",
+        "name": "",
+        "update": false,
+        "path": "/",
+        "x": 2250,
+        "y": 2040,
+        "wires": []
+    },
+    {
+        "id": "892d6dbb.9aea4",
+        "type": "change",
+        "z": "81005e6f.f948c",
+        "name": "/db/upward_time",
+        "rules": [
+            {
+                "t": "set",
+                "p": "datapath",
+                "pt": "msg",
+                "to": "/db/upward_time",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 180,
+        "wires": [
+            [
+                "b9fcc8ed.60f718"
+            ]
+        ]
+    },
+    {
+        "id": "d7996926.ecdd08",
+        "type": "link out",
+        "z": "81005e6f.f948c",
+        "name": "mqtt out",
+        "links": [
+            "e11a7ac2.ec7698"
+        ],
+        "x": 1955,
+        "y": 2560,
+        "wires": []
+    },
+    {
+        "id": "bef1f9b3.712c68",
+        "type": "function",
+        "z": "81005e6f.f948c",
+        "name": "get time spent for seat moving downward",
+        "func": "msg.payload = global.get(\"seat_down_dur\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1720,
+        "y": 2780,
+        "wires": [
+            [
+                "49256c16.008ba4",
+                "4bb494ed.d4009c"
+            ]
+        ]
+    },
+    {
+        "id": "4bb494ed.d4009c",
+        "type": "ui_text",
+        "z": "81005e6f.f948c",
+        "group": "6f3366d.9c49e98",
+        "order": 16,
+        "width": "2",
+        "height": "1",
+        "name": "seat down movement time duration so far",
+        "label": "{{msg.payload}}",
+        "format": "sec",
+        "layout": "row-spread",
+        "x": 2100,
+        "y": 2840,
+        "wires": []
+    },
+    {
+        "id": "526beb4f.0b8d54",
+        "type": "change",
+        "z": "81005e6f.f948c",
+        "name": "audi_seat/seat_motion/vertical: stop",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "stop",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "audi_seat/seat_motion/vertical",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1710,
+        "y": 2900,
+        "wires": [
+            [
+                "11ea7e11.583012"
+            ]
+        ]
+    },
+    {
+        "id": "11ea7e11.583012",
+        "type": "link out",
+        "z": "81005e6f.f948c",
+        "name": "mqtt out",
+        "links": [
+            "e11a7ac2.ec7698"
+        ],
+        "x": 1915,
+        "y": 2900,
+        "wires": []
+    },
+    {
+        "id": "49256c16.008ba4",
+        "type": "change",
+        "z": "81005e6f.f948c",
+        "name": "/db/downward_time",
+        "rules": [
+            {
+                "t": "set",
+                "p": "datapath",
+                "pt": "msg",
+                "to": "/db/downward_time",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2040,
+        "y": 2780,
+        "wires": [
+            [
+                "5cb29a09.9e9654"
+            ]
+        ]
+    },
+    {
+        "id": "5cb29a09.9e9654",
+        "type": "DataIn",
+        "z": "81005e6f.f948c",
+        "collection": "81b83ab2.b76038",
+        "name": "",
+        "update": false,
+        "path": "/",
+        "x": 2270,
+        "y": 2780,
+        "wires": []
+    },
+    {
+        "id": "6a5c64d.285009c",
+        "type": "change",
+        "z": "81005e6f.f948c",
+        "name": "/db/downward_time",
+        "rules": [
+            {
+                "t": "set",
+                "p": "datapath",
+                "pt": "msg",
+                "to": "/db/downward_time",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 240,
+        "wires": [
+            [
+                "b9fcc8ed.60f718"
+            ]
+        ]
+    },
+    {
+        "id": "44aeb992.3a7b08",
+        "type": "link out",
+        "z": "81005e6f.f948c",
+        "name": "1out",
+        "links": [
+            "e1dd05f.b97f4f8",
+            "a74ebe3b.44e1c",
+            "f864e0d5.96509"
+        ],
+        "x": 1455,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "e1dd05f.b97f4f8",
+        "type": "link in",
+        "z": "81005e6f.f948c",
+        "name": "1in",
+        "links": [
+            "44aeb992.3a7b08"
+        ],
+        "x": 1815,
+        "y": 800,
+        "wires": [
+            [
+                "656930f3.aae9f"
+            ]
+        ]
+    },
+    {
+        "id": "22ced2e3.c057ee",
+        "type": "link in",
+        "z": "81005e6f.f948c",
+        "name": "2in",
+        "links": [
+            "97d7507b.1ed6c"
+        ],
+        "x": 1855,
+        "y": 1480,
+        "wires": [
+            [
+                "b1046c7.88b7e9"
+            ]
+        ]
+    },
+    {
+        "id": "97d7507b.1ed6c",
+        "type": "link out",
+        "z": "81005e6f.f948c",
+        "name": "2out",
+        "links": [
+            "22ced2e3.c057ee",
+            "425ae174.382a8"
+        ],
+        "x": 1455,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "d6d6d8b4.067e58",
+        "type": "link out",
+        "z": "81005e6f.f948c",
+        "name": "3out",
+        "links": [
+            "16026e93.318bc1",
+            "ac1b5283.3d08c",
+            "41c44036.e1dd8"
+        ],
+        "x": 1455,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "9c5e873a.16bdf8",
+        "type": "link out",
+        "z": "81005e6f.f948c",
+        "name": "4out",
+        "links": [
+            "8341e379.798f1",
+            "247a5af.536f9a6"
+        ],
+        "x": 1455,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "16026e93.318bc1",
+        "type": "link in",
+        "z": "81005e6f.f948c",
+        "name": "3in",
+        "links": [
+            "d6d6d8b4.067e58"
+        ],
+        "x": 1855,
+        "y": 2100,
+        "wires": [
+            [
+                "4301ab1e.aee024"
+            ]
+        ]
+    },
+    {
+        "id": "8341e379.798f1",
+        "type": "link in",
+        "z": "81005e6f.f948c",
+        "name": "4in",
+        "links": [
+            "9c5e873a.16bdf8"
+        ],
+        "x": 1855,
+        "y": 2840,
+        "wires": [
+            [
+                "4bb494ed.d4009c"
+            ]
+        ]
+    },
+    {
+        "id": "89567469.7a3228",
+        "type": "switch",
+        "z": "81005e6f.f948c",
+        "name": "",
+        "property": "datapath",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "/db/forward_time",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "/db/backward_time",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "/db/upward_time",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "/db/downward_time",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "/db/back_rest_forward_time",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "/db/back_rest_backward_time",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 6,
+        "x": 1270,
+        "y": 200,
+        "wires": [
+            [
+                "44aeb992.3a7b08"
+            ],
+            [
+                "97d7507b.1ed6c"
+            ],
+            [
+                "d6d6d8b4.067e58"
+            ],
+            [
+                "9c5e873a.16bdf8"
+            ],
+            [
+                "a0d2bf05.50868"
+            ],
+            [
+                "35e170f1.f3e68"
+            ]
+        ]
+    },
+    {
+        "id": "a74ebe3b.44e1c",
+        "type": "link in",
+        "z": "81005e6f.f948c",
+        "name": "1in",
+        "links": [
+            "44aeb992.3a7b08"
+        ],
+        "x": 2295,
+        "y": 500,
+        "wires": [
+            [
+                "a9cf94b7.f81058"
+            ]
+        ]
+    },
+    {
+        "id": "425ae174.382a8",
+        "type": "link in",
+        "z": "81005e6f.f948c",
+        "name": "2in",
+        "links": [
+            "97d7507b.1ed6c"
+        ],
+        "x": 2295,
+        "y": 1160,
+        "wires": [
+            [
+                "6459692e.167828"
+            ]
+        ]
+    },
+    {
+        "id": "ac1b5283.3d08c",
+        "type": "link in",
+        "z": "81005e6f.f948c",
+        "name": "3in",
+        "links": [
+            "d6d6d8b4.067e58"
+        ],
+        "x": 2275,
+        "y": 1760,
+        "wires": [
+            [
+                "edca5c8a.26f88"
+            ]
+        ]
+    },
+    {
+        "id": "247a5af.536f9a6",
+        "type": "link in",
+        "z": "81005e6f.f948c",
+        "name": "4in",
+        "links": [
+            "9c5e873a.16bdf8"
+        ],
+        "x": 2315,
+        "y": 2460,
+        "wires": [
+            [
+                "a751c152.afe2"
+            ]
+        ]
+    },
+    {
+        "id": "31129233.b6585e",
+        "type": "ui_button",
+        "z": "11115443.8ca05c",
+        "name": "",
+        "group": "953f6871.46a5d8",
+        "order": 4,
+        "width": "5",
+        "height": "2",
+        "passthru": false,
+        "label": "RELAX MODE BEGIN",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 760,
+        "y": 460,
+        "wires": [
+            [
+                "1d6a4c7d.7cf294",
+                "f3e1dbd8.0ff1e8",
+                "cf34e8b.64b5c18",
+                "c0c380c6.95ede",
+                "487d89c6.0edb08",
+                "d63e2e5a.f070f"
+            ]
+        ]
+    },
+    {
+        "id": "e7a2e58a.9687e8",
+        "type": "ui_button",
+        "z": "11115443.8ca05c",
+        "name": "",
+        "group": "953f6871.46a5d8",
+        "order": 5,
+        "width": "5",
+        "height": "2",
+        "passthru": false,
+        "label": "RELAX MODE END",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 750,
+        "y": 920,
+        "wires": [
+            [
+                "bbdc9700.8d3088",
+                "8e0dfae2.330388",
+                "87d743f9.2aabb",
+                "5a127e2e.d10e9",
+                "bd9ff7eb.64b608",
+                "71b0bdd4.20c644"
+            ]
+        ]
+    },
+    {
+        "id": "c4859624.a69058",
+        "type": "mytimeout",
+        "z": "11115443.8ca05c",
+        "name": "",
+        "outtopic": "",
+        "outsafe": "",
+        "outwarning": "",
+        "outunsafe": "off",
+        "warning": "",
+        "timer": "",
+        "debug": false,
+        "ndebug": false,
+        "ignoreCase": false,
+        "repeat": false,
+        "again": false,
+        "x": 1350,
+        "y": 460,
+        "wires": [
+            [
+                "ba053e97.23d3a"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "1d6a4c7d.7cf294",
+        "type": "function",
+        "z": "11115443.8ca05c",
+        "name": "set seat base up stop timer ",
+        "func": "msg.payload = {\n    \"payload\": \"on\",\n    \"timeout\": parseInt(global.get(\"seat_up_dur\")),\n    \"warning\": 2\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1070,
+        "y": 460,
+        "wires": [
+            [
+                "c4859624.a69058"
+            ]
+        ]
+    },
+    {
+        "id": "28a71b7.c903be4",
+        "type": "mytimeout",
+        "z": "11115443.8ca05c",
+        "name": "",
+        "outtopic": "",
+        "outsafe": "",
+        "outwarning": "",
+        "outunsafe": "off",
+        "warning": "",
+        "timer": "",
+        "debug": false,
+        "ndebug": false,
+        "ignoreCase": false,
+        "repeat": false,
+        "again": false,
+        "x": 1350,
+        "y": 520,
+        "wires": [
+            [
+                "e791c75d.027bc8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "f3e1dbd8.0ff1e8",
+        "type": "function",
+        "z": "11115443.8ca05c",
+        "name": "set seat base front stop timer ",
+        "func": "msg.payload = {\n    \"payload\": \"on\",\n    \"timeout\": parseInt(global.get(\"seat_front_dur\")),\n    \"warning\": 2\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1070,
+        "y": 520,
+        "wires": [
+            [
+                "28a71b7.c903be4"
+            ]
+        ]
+    },
+    {
+        "id": "ba053e97.23d3a",
+        "type": "switch",
+        "z": "11115443.8ca05c",
+        "name": "if done",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1530,
+        "y": 440,
+        "wires": [
+            [
+                "f68eaea7.c94f7"
+            ]
+        ]
+    },
+    {
+        "id": "e791c75d.027bc8",
+        "type": "switch",
+        "z": "11115443.8ca05c",
+        "name": "if done",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1530,
+        "y": 500,
+        "wires": [
+            [
+                "6827e937.7c69e8"
+            ]
+        ]
+    },
+    {
+        "id": "dc69cb04.1dcea8",
+        "type": "mytimeout",
+        "z": "11115443.8ca05c",
+        "name": "",
+        "outtopic": "",
+        "outsafe": "",
+        "outwarning": "",
+        "outunsafe": "off",
+        "warning": "",
+        "timer": "",
+        "debug": false,
+        "ndebug": false,
+        "ignoreCase": false,
+        "repeat": false,
+        "again": false,
+        "x": 1350,
+        "y": 920,
+        "wires": [
+            [
+                "7862c167.45263"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "bbdc9700.8d3088",
+        "type": "function",
+        "z": "11115443.8ca05c",
+        "name": "set seat base down stop timer ",
+        "func": "msg.payload = {\n    \"payload\": \"on\",\n    \"timeout\": parseInt(global.get(\"seat_down_dur\")),\n    \"warning\": 2\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1070,
+        "y": 920,
+        "wires": [
+            [
+                "dc69cb04.1dcea8"
+            ]
+        ]
+    },
+    {
+        "id": "45319a45.c4b9c4",
+        "type": "mytimeout",
+        "z": "11115443.8ca05c",
+        "name": "",
+        "outtopic": "",
+        "outsafe": "",
+        "outwarning": "",
+        "outunsafe": "off",
+        "warning": "",
+        "timer": "",
+        "debug": false,
+        "ndebug": false,
+        "ignoreCase": false,
+        "repeat": false,
+        "again": false,
+        "x": 1350,
+        "y": 980,
+        "wires": [
+            [
+                "31a97f90.5ad4c"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "8e0dfae2.330388",
+        "type": "function",
+        "z": "11115443.8ca05c",
+        "name": "set seat base back stop timer ",
+        "func": "msg.payload = {\n    \"payload\": \"on\",\n    \"timeout\": parseInt(global.get(\"seat_back_dur\")),\n    \"warning\": 2\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1070,
+        "y": 980,
+        "wires": [
+            [
+                "45319a45.c4b9c4"
+            ]
+        ]
+    },
+    {
+        "id": "7862c167.45263",
+        "type": "switch",
+        "z": "11115443.8ca05c",
+        "name": "if done",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1530,
+        "y": 900,
+        "wires": [
+            [
+                "98ee0562.449e68"
+            ]
+        ]
+    },
+    {
+        "id": "31a97f90.5ad4c",
+        "type": "switch",
+        "z": "11115443.8ca05c",
+        "name": "if done",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1530,
+        "y": 960,
+        "wires": [
+            [
+                "87c6f465.ce93d8"
+            ]
+        ]
+    },
+    {
+        "id": "cf34e8b.64b5c18",
+        "type": "change",
+        "z": "11115443.8ca05c",
+        "name": "audi_seat/seat_motion/lateral: front",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "front",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "audi_seat/seat_motion/lateral",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1080,
+        "y": 260,
+        "wires": [
+            [
+                "af1bc724.d4b548"
+            ]
+        ]
+    },
+    {
+        "id": "af1bc724.d4b548",
+        "type": "link out",
+        "z": "11115443.8ca05c",
+        "name": "mqtt out",
+        "links": [
+            "e11a7ac2.ec7698"
+        ],
+        "x": 1295,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "c0c380c6.95ede",
+        "type": "change",
+        "z": "11115443.8ca05c",
+        "name": "audi_seat/seat_motion/vertical: up",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "up",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "audi_seat/seat_motion/vertical",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1080,
+        "y": 320,
+        "wires": [
+            [
+                "bb4dbfa9.70516"
+            ]
+        ]
+    },
+    {
+        "id": "bb4dbfa9.70516",
+        "type": "link out",
+        "z": "11115443.8ca05c",
+        "name": "mqtt out",
+        "links": [
+            "e11a7ac2.ec7698"
+        ],
+        "x": 1295,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "87d743f9.2aabb",
+        "type": "change",
+        "z": "11115443.8ca05c",
+        "name": "audi_seat/seat_motion/lateral: back",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "back",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "audi_seat/seat_motion/lateral",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1080,
+        "y": 740,
+        "wires": [
+            [
+                "cad08bec.ca0318"
+            ]
+        ]
+    },
+    {
+        "id": "cad08bec.ca0318",
+        "type": "link out",
+        "z": "11115443.8ca05c",
+        "name": "mqtt out",
+        "links": [
+            "e11a7ac2.ec7698"
+        ],
+        "x": 1295,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "5a127e2e.d10e9",
+        "type": "change",
+        "z": "11115443.8ca05c",
+        "name": "audi_seat/seat_motion/vertical: down",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "down",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "audi_seat/seat_motion/vertical",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1090,
+        "y": 800,
+        "wires": [
+            [
+                "a947a673.60efd8"
+            ]
+        ]
+    },
+    {
+        "id": "a947a673.60efd8",
+        "type": "link out",
+        "z": "11115443.8ca05c",
+        "name": "mqtt out",
+        "links": [
+            "e11a7ac2.ec7698"
+        ],
+        "x": 1295,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "6827e937.7c69e8",
+        "type": "change",
+        "z": "11115443.8ca05c",
+        "name": "audi_seat/seat_motion/lateral: stop",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "stop",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "audi_seat/seat_motion/lateral",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1780,
+        "y": 500,
+        "wires": [
+            [
+                "cd76fa18.6034e8"
+            ]
+        ]
+    },
+    {
+        "id": "cd76fa18.6034e8",
+        "type": "link out",
+        "z": "11115443.8ca05c",
+        "name": "mqtt out",
+        "links": [
+            "e11a7ac2.ec7698"
+        ],
+        "x": 1995,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "f68eaea7.c94f7",
+        "type": "change",
+        "z": "11115443.8ca05c",
+        "name": "audi_seat/seat_motion/vertical: stop",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "stop",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "audi_seat/seat_motion/vertical",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1790,
+        "y": 440,
+        "wires": [
+            [
+                "de8e79cb.0dd2e8"
+            ]
+        ]
+    },
+    {
+        "id": "de8e79cb.0dd2e8",
+        "type": "link out",
+        "z": "11115443.8ca05c",
+        "name": "mqtt out",
+        "links": [
+            "e11a7ac2.ec7698"
+        ],
+        "x": 1995,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "98ee0562.449e68",
+        "type": "change",
+        "z": "11115443.8ca05c",
+        "name": "audi_seat/seat_motion/vertical: stop",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "stop",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "audi_seat/seat_motion/vertical",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1790,
+        "y": 900,
+        "wires": [
+            [
+                "2d8386d8.9a2f4a"
+            ]
+        ]
+    },
+    {
+        "id": "2d8386d8.9a2f4a",
+        "type": "link out",
+        "z": "11115443.8ca05c",
+        "name": "mqtt out",
+        "links": [
+            "e11a7ac2.ec7698"
+        ],
+        "x": 1995,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "87c6f465.ce93d8",
+        "type": "change",
+        "z": "11115443.8ca05c",
+        "name": "audi_seat/seat_motion/lateral: stop",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "stop",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "audi_seat/seat_motion/lateral",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1780,
+        "y": 960,
+        "wires": [
+            [
+                "8892146.8f84be8"
+            ]
+        ]
+    },
+    {
+        "id": "8892146.8f84be8",
+        "type": "link out",
+        "z": "11115443.8ca05c",
+        "name": "mqtt out",
+        "links": [
+            "e11a7ac2.ec7698"
+        ],
+        "x": 1995,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "157ea518.8a2fdb",
+        "type": "ui_template",
+        "z": "714a0eba.ea77c",
+        "group": "aba832d6.e1e26",
+        "name": "",
+        "order": 0,
+        "width": "10",
+        "height": "16",
+        "format": "<html>\n    <b>Configuration Panel</b>\n    <p>This is used to set up the individual timeouts/delays/transition time\n    for the individual SEAT COMPONENTS like: seat base, back rest etc.\n    </p><br>\n    MQTT messages:\n    <pre>\n    audi_seat/seat_motion/lateral:front # move seat base →\n    audi_seat/seat_motion/lateral:back  # move seat base ←\n    audi_seat/seat_motion/lateral:stop  # stop lateral motion\n    \n    audi_seat/seat_motion/vertical:up   # move seat base ↑\n    audi_seat/seat_motion/vertical:down # move seat base ↓\n    audi_seat/seat_motion/vertical:stop # stop vertical motion\n    \n    audi_seat/back_rest_motion:front # move seat base →\n    audi_seat/back_rest_motion:back  # move seat base ←\n    audi_seat/back_rest_motion:stop  # stop lateral motion\n    \n    audi_seat/massage: start         # starts massage\n    audi_seat/massage: stop          # stops masssage\n    </pre>\n\n    The forward, backward, up, down and other functions are \n    sent by the marked buttons. \n    \n    Upon sending the commands, It starts counting the time \n    elapsed.\n    <br>\n    Pressing the consequitive STOP buttons:\n    <ol>\n        <li>Sends respective Stop commands via MQTT</li>\n        <li>Stores the respective durations, up until that time, in DB.</li>\n    </ol>\n    <br>\n    Those durations are used in setting limits for each motion, as in:\n    <br><br>\n    If I ask the SEAT BASE only to move FORWARD, then my system will send:\n    <pre>\n     audi_seat/seat_motion/lateral:front # seat base →\n     \n     delay [ duration saved for seat base's forward motion ]\n     \n     audi_seat/seat_motion/lateral:stop  # seat base stops\n    </pre>\n    This way we can create complex choreographies of motion from our main \n    control panel. The main control module will send signals here and we keep \n    this module running but only use it for set up in the beginiing phases]\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 720,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "acb7b9fd.8ed608",
+        "type": "ui_template",
+        "z": "11115443.8ca05c",
+        "group": "20684a59.824aa6",
+        "name": "",
+        "order": 0,
+        "width": "6",
+        "height": "6",
+        "format": "<div id=\"seat_base_forward_status\">seat_base_forward</div><br>\n<div id=\"seat_base_backward_status\">seat_base_back</div><br>\n<div id=\"seat_base_up_status\">seat_base_up</div><br>\n<div id=\"seat_base_down_status\">seat_base_down</div><br>\n<div id=\"backrest_forward_status\">back_rest_forward</div><br>\n<div id=\"backrest_backward_status\">back_rest_back</div><br>\n<div id=\"massage_status\">massage_status</div><br>\n\n\n<style>\n#seat_base_forward_status{\n    width:140px;\n    height:20px;\n    background:#A54242;\n}\n#seat_base_backward_status{\n    width:140px;\n    height:20px;\n    background:#A54242;\n}\n#seat_base_up_status{\n    width:140px;\n    height:20px;\n    background:#A54242;\n}\n#seat_base_down_status{\n    width:140px;\n    height:20px;\n    background:#A54242;\n}\n#backrest_forward_status{\n    width:140px;\n    height:20px;\n    background:#A54242;\n}\n#backrest_backward_status{\n    width:140px;\n    height:20px;\n    background:#A54242;\n}\n#massage_status{\n    width:140px;\n    height:20px;\n    background:#A54242;\n}\n</style>\n\n<script>\n(function(scope) {\n  scope.$watch('msg', function(msg) {\n    if (msg && msg.topic === \"audi_seat/seat_motion/lateral\") {\n        if(msg.payload === \"front\"){\n            $(\"#seat_base_forward_status\").css( \"background-color\", \"#007D05\");\n        }\n        if(msg.payload === \"back\"){\n            $(\"#seat_base_backward_status\").css( \"background-color\", \"#007D05\");\n        }\n        if(msg.payload === \"stop\"){\n            $(\"#seat_base_forward_status\").css( \"background-color\", \"#A54242\");\n            $(\"#seat_base_backward_status\").css( \"background-color\", \"#A54242\");\n        }\n    }\n    if (msg && msg.topic === \"audi_seat/seat_motion/vertical\") {\n        if(msg.payload === \"up\"){\n            $(\"#seat_base_up_status\").css( \"background-color\", \"#007D05\");\n            \n        }\n        if(msg.payload === \"down\"){\n             $(\"#seat_base_down_status\").css( \"background-color\", \"#007D05\");\n        }\n        if(msg.payload === \"stop\"){\n            $(\"#seat_base_up_status\").css( \"background-color\", \"#A54242\");\n            $(\"#seat_base_down_status\").css( \"background-color\", \"#A54242\");\n            \n        }\n    }\n    if (msg && msg.topic === \"audi_seat/back_rest_motion\") {\n        if(msg.payload === \"front\"){\n            $(\"#backrest_forward_status\").css( \"background-color\", \"#007D05\");\n        }\n        if(msg.payload === \"back\"){\n            $(\"#backrest_backward_status\").css( \"background-color\", \"#007D05\");\n        }\n        if(msg.payload === \"stop\"){\n            $(\"#backrest_forward_status\").css( \"background-color\", \"#A54242\");\n            $(\"#backrest_backward_status\").css( \"background-color\", \"#A54242\");\n        }\n    }\n    if (msg && msg.topic === \"audi_seat/massage\") {\n        if(msg.payload === \"start\"){\n            $(\"#massage_status\").css( \"background-color\", \"#007D05\");\n        }\n        if(msg.payload === \"stop\"){\n            $(\"#massage_status\").css( \"background-color\", \"#A54242\");\n        }\n    }\n  });\n})(scope);\n</script>\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 1780,
+        "y": 1440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dd090776.b22e28",
+        "type": "mqtt in",
+        "z": "11115443.8ca05c",
+        "name": "",
+        "topic": "audi_seat/seat_motion/lateral",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "a8cbf63f.0ef318",
+        "x": 1100,
+        "y": 1460,
+        "wires": [
+            [
+                "7a4d5712.472308"
+            ]
+        ]
+    },
+    {
+        "id": "116eced3.c5ca01",
+        "type": "mqtt in",
+        "z": "11115443.8ca05c",
+        "name": "",
+        "topic": "audi_seat/seat_motion/vertical",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "a8cbf63f.0ef318",
+        "x": 1090,
+        "y": 1560,
+        "wires": [
+            [
+                "5d843afb.82e174"
+            ]
+        ]
+    },
+    {
+        "id": "7a4d5712.472308",
+        "type": "switch",
+        "z": "11115443.8ca05c",
+        "name": "front/back/stop",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "front",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "back",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "stop",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 1360,
+        "y": 1460,
+        "wires": [
+            [
+                "acb7b9fd.8ed608"
+            ],
+            [
+                "acb7b9fd.8ed608"
+            ],
+            [
+                "acb7b9fd.8ed608"
+            ]
+        ]
+    },
+    {
+        "id": "5d843afb.82e174",
+        "type": "switch",
+        "z": "11115443.8ca05c",
+        "name": "up/down/stop",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "up",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "down",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "stop",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 1360,
+        "y": 1560,
+        "wires": [
+            [
+                "acb7b9fd.8ed608"
+            ],
+            [
+                "acb7b9fd.8ed608"
+            ],
+            [
+                "acb7b9fd.8ed608"
+            ]
+        ]
+    },
+    {
+        "id": "5d0ef24c.40ea9c",
+        "type": "change",
+        "z": "81005e6f.f948c",
+        "name": "/db/back_rest_forward_time",
+        "rules": [
+            {
+                "t": "set",
+                "p": "datapath",
+                "pt": "msg",
+                "to": "/db/back_rest_forward_time",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 360,
+        "wires": [
+            [
+                "b9fcc8ed.60f718"
+            ]
+        ]
+    },
+    {
+        "id": "ab1ff315.43597",
+        "type": "inject",
+        "z": "81005e6f.f948c",
+        "name": "",
+        "topic": "",
+        "payload": "stop",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 1070,
+        "y": 3420,
+        "wires": [
+            [
+                "879738f3.18acf8"
+            ]
+        ]
+    },
+    {
+        "id": "bf49cb32.255888",
+        "type": "counter",
+        "z": "81005e6f.f948c",
+        "inc": 1,
+        "name": "",
+        "x": 2200,
+        "y": 3240,
+        "wires": [
+            [
+                "418eaeac.6faa6",
+                "3a4031f9.7948de"
+            ]
+        ]
+    },
+    {
+        "id": "418eaeac.6faa6",
+        "type": "function",
+        "z": "81005e6f.f948c",
+        "name": "set time spent for back_rest moving backward",
+        "func": "global.set(\"back_rest_back_dur\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 2520,
+        "y": 3280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "879738f3.18acf8",
+        "type": "ui_button",
+        "z": "81005e6f.f948c",
+        "name": "stop back_rest backward motion",
+        "group": "6f3366d.9c49e98",
+        "order": 19,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "label": "stop/set duration",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "stop",
+        "payloadType": "str",
+        "topic": "",
+        "x": 1320,
+        "y": 3420,
+        "wires": [
+            [
+                "3a8eae08.708902",
+                "ac4a542.c0870a8",
+                "ec23f1b8.e7a1c",
+                "c2a27373.b8789"
+            ]
+        ]
+    },
+    {
+        "id": "3a4031f9.7948de",
+        "type": "ui_text",
+        "z": "81005e6f.f948c",
+        "group": "6f3366d.9c49e98",
+        "order": 18,
+        "width": "2",
+        "height": "1",
+        "name": "back rest back movement time elapsed",
+        "label": "{{msg.payload}}",
+        "format": "sec",
+        "layout": "row-spread",
+        "x": 2490,
+        "y": 3240,
+        "wires": []
+    },
+    {
+        "id": "fb1dcc8d.9a18f",
+        "type": "ui_button",
+        "z": "81005e6f.f948c",
+        "name": "",
+        "group": "6f3366d.9c49e98",
+        "order": 17,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "label": "backrest ←",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 1310,
+        "y": 3320,
+        "wires": [
+            [
+                "a9f4c2d1.a8c9a"
+            ]
+        ]
+    },
+    {
+        "id": "a9f4c2d1.a8c9a",
+        "type": "change",
+        "z": "81005e6f.f948c",
+        "name": "audi_seat/back_rest_motion: back",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "back",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "audi_seat/back_rest_motion",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1640,
+        "y": 3320,
+        "wires": [
+            [
+                "3a8eae08.708902",
+                "570f2605.cb8ba8"
+            ]
+        ]
+    },
+    {
+        "id": "90affb84.fd0908",
+        "type": "inject",
+        "z": "81005e6f.f948c",
+        "name": "backrest forward",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 1100,
+        "y": 3320,
+        "wires": [
+            [
+                "fb1dcc8d.9a18f"
+            ]
+        ]
+    },
+    {
+        "id": "3a8eae08.708902",
+        "type": "looptimer",
+        "z": "81005e6f.f948c",
+        "duration": "1",
+        "units": "Second",
+        "maxloops": "1000000000",
+        "maxtimeout": "1",
+        "maxtimeoutunits": "Hour",
+        "name": "",
+        "x": 1940,
+        "y": 3420,
+        "wires": [
+            [
+                "bf49cb32.255888"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "ac4a542.c0870a8",
+        "type": "change",
+        "z": "81005e6f.f948c",
+        "name": "reset",
+        "rules": [
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1910,
+        "y": 3240,
+        "wires": [
+            [
+                "bf49cb32.255888"
+            ]
+        ]
+    },
+    {
+        "id": "ec23f1b8.e7a1c",
+        "type": "function",
+        "z": "81005e6f.f948c",
+        "name": "get time spent for back_rest moving backward",
+        "func": "msg.payload = global.get(\"back_rest_back_dur\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1680,
+        "y": 3520,
+        "wires": [
+            [
+                "973c32e4.1eee7",
+                "1c8cf565.b798eb"
+            ]
+        ]
+    },
+    {
+        "id": "973c32e4.1eee7",
+        "type": "ui_text",
+        "z": "81005e6f.f948c",
+        "group": "6f3366d.9c49e98",
+        "order": 20,
+        "width": "2",
+        "height": "1",
+        "name": "back_rest back movement time duration so far",
+        "label": "{{msg.payload}}",
+        "format": "sec",
+        "layout": "row-spread",
+        "x": 2100,
+        "y": 3580,
+        "wires": []
+    },
+    {
+        "id": "c2a27373.b8789",
+        "type": "change",
+        "z": "81005e6f.f948c",
+        "name": "audi_seat/back_rest_motion: stop",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "stop",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "audi_seat/back_rest_motion",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1640,
+        "y": 3640,
+        "wires": [
+            [
+                "f9e996d8.8f2938"
+            ]
+        ]
+    },
+    {
+        "id": "570f2605.cb8ba8",
+        "type": "link out",
+        "z": "81005e6f.f948c",
+        "name": "mqtt out",
+        "links": [
+            "e11a7ac2.ec7698"
+        ],
+        "x": 1855,
+        "y": 3320,
+        "wires": []
+    },
+    {
+        "id": "f9e996d8.8f2938",
+        "type": "link out",
+        "z": "81005e6f.f948c",
+        "name": "mqtt out",
+        "links": [
+            "e11a7ac2.ec7698"
+        ],
+        "x": 1855,
+        "y": 3640,
+        "wires": []
+    },
+    {
+        "id": "c5f79641.5f16f8",
+        "type": "DataIn",
+        "z": "81005e6f.f948c",
+        "collection": "81b83ab2.b76038",
+        "name": "",
+        "update": false,
+        "path": "/",
+        "x": 2270,
+        "y": 3520,
+        "wires": []
+    },
+    {
+        "id": "96dd429f.b5bd2",
+        "type": "link in",
+        "z": "81005e6f.f948c",
+        "name": "5in",
+        "links": [
+            "a0d2bf05.50868"
+        ],
+        "x": 1775,
+        "y": 3580,
+        "wires": [
+            [
+                "973c32e4.1eee7"
+            ]
+        ]
+    },
+    {
+        "id": "26ca44ec.9aa8bc",
+        "type": "link in",
+        "z": "81005e6f.f948c",
+        "name": "5in",
+        "links": [
+            "a0d2bf05.50868"
+        ],
+        "x": 2255,
+        "y": 3280,
+        "wires": [
+            [
+                "418eaeac.6faa6"
+            ]
+        ]
+    },
+    {
+        "id": "a0d2bf05.50868",
+        "type": "link out",
+        "z": "81005e6f.f948c",
+        "name": "5out",
+        "links": [
+            "26ca44ec.9aa8bc",
+            "96dd429f.b5bd2",
+            "1b677d8b.d74a42",
+            "6e4acfac.1bc37"
+        ],
+        "x": 1455,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "bd9ff7eb.64b608",
+        "type": "change",
+        "z": "11115443.8ca05c",
+        "name": "audi_seat/back_rest_motion: front",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "front",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "audi_seat/back_rest_motion",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1080,
+        "y": 860,
+        "wires": [
+            [
+                "e4b5923e.e14dd"
+            ]
+        ]
+    },
+    {
+        "id": "e4b5923e.e14dd",
+        "type": "link out",
+        "z": "11115443.8ca05c",
+        "name": "mqtt out",
+        "links": [
+            "e11a7ac2.ec7698"
+        ],
+        "x": 1295,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "71b0bdd4.20c644",
+        "type": "function",
+        "z": "11115443.8ca05c",
+        "name": "set back-rest front stop timer ",
+        "func": "msg.payload = {\n    \"payload\": \"on\",\n    \"timeout\": parseInt(global.get(\"back_rest_front_dur\")),\n    \"warning\": 2\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1060,
+        "y": 1040,
+        "wires": [
+            [
+                "d3e63861.4ad788"
+            ]
+        ]
+    },
+    {
+        "id": "d3e63861.4ad788",
+        "type": "mytimeout",
+        "z": "11115443.8ca05c",
+        "name": "",
+        "outtopic": "",
+        "outsafe": "",
+        "outwarning": "",
+        "outunsafe": "off",
+        "warning": "",
+        "timer": "",
+        "debug": false,
+        "ndebug": false,
+        "ignoreCase": false,
+        "repeat": false,
+        "again": false,
+        "x": 1350,
+        "y": 1040,
+        "wires": [
+            [
+                "aefc8726.b9e938"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "aefc8726.b9e938",
+        "type": "switch",
+        "z": "11115443.8ca05c",
+        "name": "if done",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1530,
+        "y": 1020,
+        "wires": [
+            [
+                "daee42ea.c5e64"
+            ]
+        ]
+    },
+    {
+        "id": "daee42ea.c5e64",
+        "type": "change",
+        "z": "11115443.8ca05c",
+        "name": "audi_seat/back_rest_motion: stop",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "stop",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "audi_seat/back_rest_motion",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1780,
+        "y": 1020,
+        "wires": [
+            [
+                "f00e0b16.e97c88"
+            ]
+        ]
+    },
+    {
+        "id": "f00e0b16.e97c88",
+        "type": "link out",
+        "z": "11115443.8ca05c",
+        "name": "mqtt out",
+        "links": [
+            "e11a7ac2.ec7698"
+        ],
+        "x": 1995,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "4f64dd07.584884",
+        "type": "mqtt in",
+        "z": "11115443.8ca05c",
+        "name": "",
+        "topic": "audi_seat/back_rest_motion",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "a8cbf63f.0ef318",
+        "x": 1100,
+        "y": 1660,
+        "wires": [
+            [
+                "687f9368.72c93c"
+            ]
+        ]
+    },
+    {
+        "id": "487d89c6.0edb08",
+        "type": "change",
+        "z": "11115443.8ca05c",
+        "name": "audi_seat/back_rest_motion: back",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "back",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "audi_seat/back_rest_motion",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1080,
+        "y": 380,
+        "wires": [
+            [
+                "8655b98.0c27d48"
+            ]
+        ]
+    },
+    {
+        "id": "8655b98.0c27d48",
+        "type": "link out",
+        "z": "11115443.8ca05c",
+        "name": "mqtt out",
+        "links": [
+            "e11a7ac2.ec7698"
+        ],
+        "x": 1295,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "d63e2e5a.f070f",
+        "type": "function",
+        "z": "11115443.8ca05c",
+        "name": "set back-rest back stop timer ",
+        "func": "msg.payload = {\n    \"payload\": \"on\",\n    \"timeout\": parseInt(global.get(\"back_rest_back_dur\")),\n    \"warning\": 2\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1090,
+        "y": 580,
+        "wires": [
+            [
+                "41ab14af.624d6c"
+            ]
+        ]
+    },
+    {
+        "id": "41ab14af.624d6c",
+        "type": "mytimeout",
+        "z": "11115443.8ca05c",
+        "name": "",
+        "outtopic": "",
+        "outsafe": "",
+        "outwarning": "",
+        "outunsafe": "off",
+        "warning": "",
+        "timer": "",
+        "debug": false,
+        "ndebug": false,
+        "ignoreCase": false,
+        "repeat": false,
+        "again": false,
+        "x": 1350,
+        "y": 580,
+        "wires": [
+            [
+                "75f8b3c5.658d1c"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "75f8b3c5.658d1c",
+        "type": "switch",
+        "z": "11115443.8ca05c",
+        "name": "if done",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1530,
+        "y": 560,
+        "wires": [
+            [
+                "2aa8023e.ccd6be"
+            ]
+        ]
+    },
+    {
+        "id": "2aa8023e.ccd6be",
+        "type": "change",
+        "z": "11115443.8ca05c",
+        "name": "audi_seat/back_rest_motion: stop",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "stop",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "audi_seat/back_rest_motion",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1780,
+        "y": 560,
+        "wires": [
+            [
+                "ecf07567.54e5f8"
+            ]
+        ]
+    },
+    {
+        "id": "ecf07567.54e5f8",
+        "type": "link out",
+        "z": "11115443.8ca05c",
+        "name": "mqtt out",
+        "links": [
+            "e11a7ac2.ec7698"
+        ],
+        "x": 1995,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "99ad2a64.afd498",
+        "type": "inject",
+        "z": "81005e6f.f948c",
+        "name": "",
+        "topic": "",
+        "payload": "stop",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 1110,
+        "y": 4080,
+        "wires": [
+            [
+                "585064d0.d9e25c"
+            ]
+        ]
+    },
+    {
+        "id": "423a96dc.389798",
+        "type": "counter",
+        "z": "81005e6f.f948c",
+        "inc": 1,
+        "name": "",
+        "x": 2240,
+        "y": 3900,
+        "wires": [
+            [
+                "7273f354.55d06c",
+                "b4d5443.d2602b8"
+            ]
+        ]
+    },
+    {
+        "id": "7273f354.55d06c",
+        "type": "function",
+        "z": "81005e6f.f948c",
+        "name": "set time spent for back_rest moving forward",
+        "func": "global.set(\"back_rest_front_dur\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 2550,
+        "y": 3940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "585064d0.d9e25c",
+        "type": "ui_button",
+        "z": "81005e6f.f948c",
+        "name": "stop back_rest forward motion",
+        "group": "6f3366d.9c49e98",
+        "order": 23,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "label": "stop/set duration",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "stop",
+        "payloadType": "str",
+        "topic": "",
+        "x": 1350,
+        "y": 4080,
+        "wires": [
+            [
+                "5e1467c2.601f58",
+                "7e4c7b38.868e94",
+                "86b8054e.395af8",
+                "eb71f63e.96d6c8"
+            ]
+        ]
+    },
+    {
+        "id": "b4d5443.d2602b8",
+        "type": "ui_text",
+        "z": "81005e6f.f948c",
+        "group": "6f3366d.9c49e98",
+        "order": 22,
+        "width": "2",
+        "height": "1",
+        "name": "back rest front movement time elapsed",
+        "label": "{{msg.payload}}",
+        "format": "sec",
+        "layout": "row-spread",
+        "x": 2530,
+        "y": 3900,
+        "wires": []
+    },
+    {
+        "id": "9d487b9d.0d7c88",
+        "type": "ui_button",
+        "z": "81005e6f.f948c",
+        "name": "",
+        "group": "6f3366d.9c49e98",
+        "order": 21,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "label": "backrest →",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 1350,
+        "y": 3980,
+        "wires": [
+            [
+                "291212a.25fa7ee"
+            ]
+        ]
+    },
+    {
+        "id": "291212a.25fa7ee",
+        "type": "change",
+        "z": "81005e6f.f948c",
+        "name": "audi_seat/back_rest_motion: front",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "front",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "audi_seat/back_rest_motion",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1680,
+        "y": 3980,
+        "wires": [
+            [
+                "5e1467c2.601f58",
+                "2565997a.13b786"
+            ]
+        ]
+    },
+    {
+        "id": "bc5a0047.49d03",
+        "type": "inject",
+        "z": "81005e6f.f948c",
+        "name": "backrest backward",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 1150,
+        "y": 3980,
+        "wires": [
+            [
+                "9d487b9d.0d7c88"
+            ]
+        ]
+    },
+    {
+        "id": "5e1467c2.601f58",
+        "type": "looptimer",
+        "z": "81005e6f.f948c",
+        "duration": "1",
+        "units": "Second",
+        "maxloops": "1000000000",
+        "maxtimeout": "1",
+        "maxtimeoutunits": "Hour",
+        "name": "",
+        "x": 1980,
+        "y": 4080,
+        "wires": [
+            [
+                "423a96dc.389798"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "7e4c7b38.868e94",
+        "type": "change",
+        "z": "81005e6f.f948c",
+        "name": "reset",
+        "rules": [
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1950,
+        "y": 3900,
+        "wires": [
+            [
+                "423a96dc.389798"
+            ]
+        ]
+    },
+    {
+        "id": "86b8054e.395af8",
+        "type": "function",
+        "z": "81005e6f.f948c",
+        "name": "get time spent for back_rest moving forward",
+        "func": "msg.payload = global.get(\"back_rest_front_dur\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1710,
+        "y": 4180,
+        "wires": [
+            [
+                "77e0199d.8b5988",
+                "7288ad15.86d5c4"
+            ]
+        ]
+    },
+    {
+        "id": "7288ad15.86d5c4",
+        "type": "ui_text",
+        "z": "81005e6f.f948c",
+        "group": "6f3366d.9c49e98",
+        "order": 24,
+        "width": "2",
+        "height": "1",
+        "name": "back_rest front movement time duration so far",
+        "label": "{{msg.payload}}",
+        "format": "sec",
+        "layout": "row-spread",
+        "x": 2120,
+        "y": 4240,
+        "wires": []
+    },
+    {
+        "id": "eb71f63e.96d6c8",
+        "type": "change",
+        "z": "81005e6f.f948c",
+        "name": "audi_seat/back_rest_motion: stop",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "stop",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "audi_seat/back_rest_motion",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1680,
+        "y": 4300,
+        "wires": [
+            [
+                "9c0440a4.848d8"
+            ]
+        ]
+    },
+    {
+        "id": "2565997a.13b786",
+        "type": "link out",
+        "z": "81005e6f.f948c",
+        "name": "mqtt out",
+        "links": [
+            "e11a7ac2.ec7698"
+        ],
+        "x": 1895,
+        "y": 3980,
+        "wires": []
+    },
+    {
+        "id": "9c0440a4.848d8",
+        "type": "link out",
+        "z": "81005e6f.f948c",
+        "name": "mqtt out",
+        "links": [
+            "e11a7ac2.ec7698"
+        ],
+        "x": 1895,
+        "y": 4300,
+        "wires": []
+    },
+    {
+        "id": "77e0199d.8b5988",
+        "type": "change",
+        "z": "81005e6f.f948c",
+        "name": "/db/back_rest_forward_time",
+        "rules": [
+            {
+                "t": "set",
+                "p": "datapath",
+                "pt": "msg",
+                "to": "/db/back_rest_forward_time",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2060,
+        "y": 4180,
+        "wires": [
+            [
+                "db658e61.27dfd"
+            ]
+        ]
+    },
+    {
+        "id": "db658e61.27dfd",
+        "type": "DataIn",
+        "z": "81005e6f.f948c",
+        "collection": "81b83ab2.b76038",
+        "name": "",
+        "update": false,
+        "path": "/",
+        "x": 2290,
+        "y": 4180,
+        "wires": []
+    },
+    {
+        "id": "b9b9ac2a.bf219",
+        "type": "link in",
+        "z": "81005e6f.f948c",
+        "name": "6in",
+        "links": [
+            "35e170f1.f3e68"
+        ],
+        "x": 1815,
+        "y": 4240,
+        "wires": [
+            [
+                "7288ad15.86d5c4"
+            ]
+        ]
+    },
+    {
+        "id": "ccbc6b5c.f43438",
+        "type": "link in",
+        "z": "81005e6f.f948c",
+        "name": "6in",
+        "links": [
+            "35e170f1.f3e68"
+        ],
+        "x": 2295,
+        "y": 3940,
+        "wires": [
+            [
+                "7273f354.55d06c"
+            ]
+        ]
+    },
+    {
+        "id": "35e170f1.f3e68",
+        "type": "link out",
+        "z": "81005e6f.f948c",
+        "name": "6out",
+        "links": [
+            "ccbc6b5c.f43438",
+            "b9b9ac2a.bf219"
+        ],
+        "x": 1455,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "687f9368.72c93c",
+        "type": "switch",
+        "z": "11115443.8ca05c",
+        "name": "front/back/stop",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "front",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "back",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "stop",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 1360,
+        "y": 1660,
+        "wires": [
+            [
+                "acb7b9fd.8ed608"
+            ],
+            [
+                "acb7b9fd.8ed608"
+            ],
+            [
+                "acb7b9fd.8ed608"
+            ]
+        ]
+    },
+    {
+        "id": "bb70f2a0.65608",
+        "type": "change",
+        "z": "81005e6f.f948c",
+        "name": "/db/back_rest_backward_time",
+        "rules": [
+            {
+                "t": "set",
+                "p": "datapath",
+                "pt": "msg",
+                "to": "/db/back_rest_backward_time",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 300,
+        "wires": [
+            [
+                "b9fcc8ed.60f718"
+            ]
+        ]
+    },
+    {
+        "id": "1c8cf565.b798eb",
+        "type": "change",
+        "z": "81005e6f.f948c",
+        "name": "/db/back_rest_backward_time",
+        "rules": [
+            {
+                "t": "set",
+                "p": "datapath",
+                "pt": "msg",
+                "to": "/db/back_rest_backward_time",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2050,
+        "y": 3520,
+        "wires": [
+            [
+                "c5f79641.5f16f8"
+            ]
+        ]
+    },
+    {
+        "id": "bedcd1ed.35b57",
+        "type": "mqtt in",
+        "z": "11115443.8ca05c",
+        "name": "",
+        "topic": "audi_seat/massage",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "a8cbf63f.0ef318",
+        "x": 1130,
+        "y": 1760,
+        "wires": [
+            [
+                "7f7d5935.e85228"
+            ]
+        ]
+    },
+    {
+        "id": "24e16f0e.3f75b",
+        "type": "inject",
+        "z": "11115443.8ca05c",
+        "name": "massage stop",
+        "topic": "",
+        "payload": "stop",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 570,
+        "y": 2220,
+        "wires": [
+            [
+                "864f177c.bcf108"
+            ]
+        ]
+    },
+    {
+        "id": "864f177c.bcf108",
+        "type": "ui_button",
+        "z": "11115443.8ca05c",
+        "name": "massage stop",
+        "group": "953f6871.46a5d8",
+        "order": 2,
+        "width": "5",
+        "height": "1",
+        "passthru": true,
+        "label": "masage stop",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 800,
+        "y": 2220,
+        "wires": [
+            [
+                "b1dbab19.2ce828"
+            ]
+        ]
+    },
+    {
+        "id": "629ac181.07364",
+        "type": "ui_button",
+        "z": "11115443.8ca05c",
+        "name": "massage start",
+        "group": "953f6871.46a5d8",
+        "order": 1,
+        "width": "5",
+        "height": "1",
+        "passthru": true,
+        "label": "massage start",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 800,
+        "y": 2120,
+        "wires": [
+            [
+                "38a517b9.a8c148"
+            ]
+        ]
+    },
+    {
+        "id": "38a517b9.a8c148",
+        "type": "change",
+        "z": "11115443.8ca05c",
+        "name": "audi_seat/massage: start",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "start",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "audi_seat/massage",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1090,
+        "y": 2120,
+        "wires": [
+            [
+                "7b9c9c0a.a85d14"
+            ]
+        ]
+    },
+    {
+        "id": "46284838.e93dd8",
+        "type": "inject",
+        "z": "11115443.8ca05c",
+        "name": "massage start",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 570,
+        "y": 2120,
+        "wires": [
+            [
+                "629ac181.07364"
+            ]
+        ]
+    },
+    {
+        "id": "7b9c9c0a.a85d14",
+        "type": "link out",
+        "z": "11115443.8ca05c",
+        "name": "mqtt out",
+        "links": [
+            "e11a7ac2.ec7698"
+        ],
+        "x": 1335,
+        "y": 2120,
+        "wires": []
+    },
+    {
+        "id": "b1dbab19.2ce828",
+        "type": "change",
+        "z": "11115443.8ca05c",
+        "name": "audi_seat/massage: stop",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "stop",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "audi_seat/massage",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1090,
+        "y": 2220,
+        "wires": [
+            [
+                "48c3fd05.c09a34"
+            ]
+        ]
+    },
+    {
+        "id": "48c3fd05.c09a34",
+        "type": "link out",
+        "z": "11115443.8ca05c",
+        "name": "mqtt out",
+        "links": [
+            "e11a7ac2.ec7698"
+        ],
+        "x": 1335,
+        "y": 2220,
+        "wires": []
+    },
+    {
+        "id": "7f7d5935.e85228",
+        "type": "switch",
+        "z": "11115443.8ca05c",
+        "name": "start/stop",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "start",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "stop",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1340,
+        "y": 1760,
+        "wires": [
+            [
+                "acb7b9fd.8ed608"
+            ],
+            [
+                "acb7b9fd.8ed608"
+            ]
+        ]
+    }
+]

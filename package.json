@@ -1,0 +1,19 @@
+{
+    "name": "node-red-project",
+    "description": "A Node-RED Project",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "cn-dashboard-nodes": "0.0.2",
+        "json-db-node-red": "~0.5.3",
+        "node-red-contrib-increment": "0.0.6",
+        "node-red-contrib-looptimer": "0.0.8",
+        "node-red-contrib-looptimer2": "0.0.2",
+        "node-red-contrib-mytimeout": "~3.2.0",
+        "node-red-contrib-stoptimer2": "~0.1.1",
+        "node-red-dashboard": "~2.19.4",
+        "node-red-node-serialport": "~0.10.0",
+        "node-red-node-ui-list": "~0.2.5",
+        "ttb-node-red-counter": "~0.1.0"
+    }
+}
