@@ -1,1 +1,1 @@
-{"myRootTest":{"currentTime":5},"db":{"time":{"payload":5,"topic":"seat_back_motion_duration"},"forward_time":4,"backward_time":4,"upward_time":3,"donward_time":2,"downward_time":3,"back_rest_forward_time":4,"back_rest_backward_time":4}}
+{"duration":{"forward_time":3,"backward_time":3,"upward_time":3,"downward_time":3,"back_rest_backward_time":3,"back_rest_forward_time":3}}
